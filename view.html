@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>打印小票</title>
+<script type="text/javascript" src="main.js"></script>
+</head>
+
+<body onload="init();">
+<div align="center">
+<div style="height:40px; width:700px; border:3px dotted #00CC99; padding-top:15px; margin-bottom:20px;" align="right">
+		<form>
+			  <span id = "Buytwo" name="activity" class="activity">买二送一活动：</span>
+			  香蕉<input type="checkbox" value="香蕉" class="item" />&nbsp;
+			  苹果<input type="checkbox" value="苹果" class="item" />&nbsp;
+			  锅<input type="checkbox" value="锅" class="item" />&nbsp;
+			  瓢<input type="checkbox" value="瓢" class="item" />&nbsp;
+			  毛笔<input type="checkbox" value="毛笔" class="item" />&nbsp;
+			  铅笔<input type="checkbox" value="铅笔" class="item" />&nbsp;
+			  &nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="button" value="点击设置" onclick="setActivity(this);" />
+		</form>
+</div>
+<div style="height:40px; width:700px; border:3px dotted #00CC99; padding-top:15px; margin-bottom:20px;" align="right">
+		<form>
+			  <span id = "Discount" name="activity" class="activity">95折扣：</span>
+			  香蕉<input type="checkbox" value="香蕉" name="item" class="item" />&nbsp;
+			  苹果<input type="checkbox" value="苹果" name="item" class="item" />&nbsp;
+			  锅<input type="checkbox" value="锅" name="item" class="item" />&nbsp;
+			  瓢<input type="checkbox" value="瓢" name="item" class="item" />&nbsp;
+			  毛笔<input type="checkbox" value="毛笔" name="item" class="item" />&nbsp;
+			  铅笔<input type="checkbox" value="铅笔" name="item" class="item" />&nbsp;
+			  &nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type="button" value="点击设置" onclick="setActivity(this);" />
+		</form>
+</div>
+<div style="height:500px; width:700px;">
+<input type="button" value="打印小票" style="float:right;" onclick="print();"/><br></br>
+<fieldset>
+<legend>显示器</legend>
+<textarea rows="25" cols="90" id="show"></textarea>
+</fieldset>
+</div>
+</div>
+</body>
+</html>
